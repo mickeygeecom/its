@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test on IT-sikkerhed blog - Mickey</title>
+    <link>https://mickeygeecom.github.io/its/categories/test/</link>
+    <description>Recent content in Test on IT-sikkerhed blog - Mickey</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Feb 2025 13:37:00 +0000</lastBuildDate>
+    <atom:link href="https://mickeygeecom.github.io/its/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blabla</title>
+      <link>https://mickeygeecom.github.io/its/posts/blabla/</link>
+      <pubDate>Fri, 07 Feb 2025 13:37:00 +0000</pubDate>
+      <guid>https://mickeygeecom.github.io/its/posts/blabla/</guid>
+      <description>&lt;p&gt;asdfasfasf&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
