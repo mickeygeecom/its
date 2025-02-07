@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bla on IT-sikkerhed blog - Mickey</title>
+    <link>https://mickeygeecom.github.io/its/categories/bla/</link>
+    <description>Recent content in Bla on IT-sikkerhed blog - Mickey</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Feb 2024 15:12:00 +0000</lastBuildDate>
+    <atom:link href="https://mickeygeecom.github.io/its/categories/bla/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wuhu</title>
+      <link>https://mickeygeecom.github.io/its/posts/wuhu/</link>
+      <pubDate>Wed, 07 Feb 2024 15:12:00 +0000</pubDate>
+      <guid>https://mickeygeecom.github.io/its/posts/wuhu/</guid>
+      <description>&lt;p&gt;asdfasfafaf&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

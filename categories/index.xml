@@ -15,5 +15,12 @@
       <guid>https://mickeygeecom.github.io/its/categories/test/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Bla</title>
+      <link>https://mickeygeecom.github.io/its/categories/bla/</link>
+      <pubDate>Wed, 07 Feb 2024 15:12:00 +0000</pubDate>
+      <guid>https://mickeygeecom.github.io/its/categories/bla/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
