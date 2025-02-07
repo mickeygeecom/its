@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: mickeygeecopm/its
+  branch: main   # or whatever branch you deploy from
+
+site_url: "https://mickeygeecom.github.io/its"
+media_folder: "static/uploads"     # Where images & files get stored in your repo
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
