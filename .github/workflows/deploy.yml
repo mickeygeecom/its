@@ -1,28 +1,24 @@
 name: Deploy Hugo to GitHub Pages
-
 on:
   push:
-    branches: [ "main" ]  # or your branch
+    branches: [ "main" ]
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # so we can push to gh-pages
+      contents: write
 
     steps:
-      # 1. Check out the repo and its submodules
       - uses: actions/checkout@v2
         with:
           submodules: true
-
-      # 2. Setup Node.js environment
+      
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: "20"
 
-      # 3. Build theme assets (npm)
       - name: Build theme assets
         run: |
           cd themes/geekblog
@@ -30,17 +26,15 @@ jobs:
           npm run build
           cd ../..
 
-      # 4. Setup Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
 
-      # 5. Build the site
       - name: Build
-        run: hugo
+        # <-- Pass baseURL specific to GitHub Pages
+        run: hugo --baseURL "https://mickeygeecom.github.io/its/"
 
-      # 6. Deploy to gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
