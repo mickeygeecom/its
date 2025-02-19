@@ -1,6 +1,19 @@
-site_name: ITS Documentation
+site_name: IT-sikkerhed - Mickey
+repo_url: https://github.com/mickeygeecom/its
+
 nav:
-  - Home: index.md
+  - Start: index.md
+  - Fagets læringsmål: læringsmål/faget.md
+  - Målsætning: læringsmål/målsætning.md
+  - Mindmap: mindmap.md
+  - Roadmap:
+    - P1 - Research: roadmap/fase1.md
+    - P2 - Detection og analyse: roadmap/fase2.md
+    - P3 - Inddæmning, eradication og recovery: roadmap/fase3.md
+    - P4 - Lessons learned og dokumentation: roadmap/fase4.md
+  - Kilder: sources.md
+  - Logbog:
+    - 19 feb.: log/19022025.md
 
 theme:
   name: material
