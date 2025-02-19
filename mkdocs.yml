@@ -1,0 +1,6 @@
+site_name: ITS Documentation
+nav:
+  - Home: index.md
+
+theme:
+  name: material
