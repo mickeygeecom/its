@@ -5,6 +5,9 @@ nav:
   - Start: index.md
   - Fagets læringsmål: læringsmål/faget.md
   - Målsætning: læringsmål/målsætning.md
+  - Infrastruktur:
+    - Arkitektur Overblik: infrastruktur/architecture.md
+    - Network Diagram: infrastruktur/network_diagram.md
   - Mindmap: mindmap.md
   - Roadmap:
     - P1 - Research: roadmap/fase1.md
@@ -14,6 +17,13 @@ nav:
   - Kilder: sources.md
   - Logbog:
     - 19 feb.: log/19022025.md
+    - 14-15 apr.: log/15042025.md
 
 theme:
   name: material
+  #features:
+  #  - mermaid
+
+plugins:
+- search
+- mermaid2
