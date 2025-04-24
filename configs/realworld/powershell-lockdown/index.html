@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../faget/">
+        <link rel="prev" href="../nginx-reverse-proxy/">
       
       
-        <link rel="next" href="../../infrastructure/demolab/architecture/">
+        <link rel="next" href="../../../mindmap/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
     
     
       
-        <title>Målsætning - IT-sikkerhed - Mickey</title>
+        <title>PowerShell Lockdown - IT-sikkerhed - Mickey</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
       
       
 
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#powershell-lockdown-script" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -73,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="IT-sikkerhed - Mickey" class="md-header__button md-logo" aria-label="IT-sikkerhed - Mickey" data-md-component="logo">
+    <a href="../../.." title="IT-sikkerhed - Mickey" class="md-header__button md-logo" aria-label="IT-sikkerhed - Mickey" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Målsætning
+              PowerShell Lockdown
             
           </span>
         </div>
@@ -180,7 +185,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="IT-sikkerhed - Mickey" class="md-nav__button md-logo" aria-label="IT-sikkerhed - Mickey" data-md-component="logo">
+    <a href="../../.." title="IT-sikkerhed - Mickey" class="md-nav__button md-logo" aria-label="IT-sikkerhed - Mickey" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -210,7 +215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -231,7 +236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faget/" class="md-nav__link">
+      <a href="../../../l%C3%A6ringsm%C3%A5l/faget/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -249,17 +254,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../l%C3%A6ringsm%C3%A5l/m%C3%A5ls%C3%A6tning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -269,7 +267,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -317,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infrastructure/demolab/architecture/" class="md-nav__link">
+      <a href="../../../infrastructure/demolab/architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -339,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infrastructure/demolab/network_diagram/" class="md-nav__link">
+      <a href="../../../infrastructure/demolab/network_diagram/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -404,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configs/demolab/proxmox/" class="md-nav__link">
+      <a href="../../demolab/proxmox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configs/demolab/opnsense/" class="md-nav__link">
+      <a href="../../demolab/opnsense/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -491,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infrastructure/realworld/architecture/" class="md-nav__link">
+      <a href="../../../infrastructure/realworld/architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -513,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infrastructure/realworld/network_diagram/" class="md-nav__link">
+      <a href="../../../infrastructure/realworld/network_diagram/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -539,17 +536,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -564,7 +563,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Real World - Configurations
@@ -578,7 +577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configs/realworld/nginx-loadbalancer/" class="md-nav__link">
+      <a href="../nginx-loadbalancer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -600,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configs/realworld/nginx-reverse-proxy/" class="md-nav__link">
+      <a href="../nginx-reverse-proxy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -619,10 +618,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../configs/realworld/powershell-lockdown/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -632,6 +640,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -644,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configs/realworld/iptables-rules.md" class="md-nav__link">
+      <a href="../iptables-rules.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -673,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mindmap/" class="md-nav__link">
+      <a href="../../../mindmap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -694,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sources/" class="md-nav__link">
+      <a href="../../../sources/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -751,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../log/19022025/" class="md-nav__link">
+      <a href="../../../log/19022025/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -773,7 +782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../log/15042025/" class="md-nav__link">
+      <a href="../../../log/15042025/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,6 +821,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -830,9 +841,181 @@
   
 
 
-  <h1>Målsætning</h1>
+<h1 id="powershell-lockdown-script">PowerShell Lockdown Script</h1>
+<p>Dette script overvåger DDoS-aktivitet mod en FiveM-server og aktiverer automatisk lockdown ved mistænkelig aktivitet. Det bruger Windows Firewall og Discord-webhooks til notifikation.</p>
+<pre><code class="language-powershell">&lt;#
+.SYNOPSIS
+  High-performance DDoS watcher for FiveM port, with Discord alerts.
 
-<p>TBA</p>
+.DESCRIPTION
+  - Tracks unique new sources (SYN + new established TCP/UDP) over a sliding window.
+  - On &gt;= $AlertThresh → enter lockdown: disable static allow rules, block TCP+UDP, whitelist clients, notify Discord.
+  - If in lockdown and count stays &lt; $AlertThresh for $ReleaseWindow s → exit lockdown: restore static rules, remove lockdown rules, notify Discord.
+  - Logs enter/exit events to C:\Scripts\DDoS-Watcher.log.
+  - Console uses a single updating status line for minimal overhead.
+#&gt;
+
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+$Port           = 30121
+$WindowSec      = 15
+$AlertThresh    = 50
+$ReleaseWindow  = 120
+$CheckInterval  = 1
+$LogFile        = &quot;C:\Scripts\DDoS-Watcher.log&quot;
+$DiscordWebhook = &quot;&quot; # Insert Discord webhook URL here
+
+$seen         = @{}    # IP -&gt; last-seen datetime
+$allClients   = @{}    # IP -&gt; $true
+$lockdown     = $false
+$releaseStart = $null  # when count first fell below threshold
+
+function Log($msg) {
+    &quot;$((Get-Date).ToString('yyyy-MM-dd HH:mm:ss'))  $msg&quot; |
+      Out-File $LogFile -Append
+}
+
+function Notify-Discord($text) {
+    $payload = @{ content = $text } | ConvertTo-Json -Compress
+    try {
+        Invoke-RestMethod -Uri $DiscordWebhook -Method Post `
+          -ContentType 'application/json' -Body $payload -ErrorAction Stop
+    } catch {
+        Log &quot;Discord webhook failed: $_&quot;
+    }
+}
+
+$static = Get-NetFirewallRule -Direction Inbound -Action Allow |
+  Where-Object {
+    (Get-NetFirewallPortFilter -AssociatedNetFirewallRule $_).LocalPort `
+      -contains $Port
+  }
+
+Get-NetFirewallRule -Name &quot;DDoS-Lockdown-TCP&quot;,&quot;DDoS-Lockdown-UDP&quot;,&quot;AllowClient_*&quot; `
+  -ErrorAction SilentlyContinue |
+    Remove-NetFirewallRule -Confirm:$false -ErrorAction SilentlyContinue
+
+function Get-CurrentClients {
+    $list = @()
+    $t = Get-NetTCPConnection -State Established -LocalPort $Port -ErrorAction SilentlyContinue
+    if ($t) { $list += $t.RemoteAddress }
+    $u = Get-NetUDPEndpoint -LocalPort $Port -ErrorAction SilentlyContinue
+    if ($u) {
+        $list += ($u | Where-Object { $_.PSObject.Properties.Match('RemoteAddress') } |
+                   Select-Object -ExpandProperty RemoteAddress)
+    }
+    return $list | Sort-Object -Unique
+}
+
+function Get-NewSources {
+    $new = @()
+    $syn = Get-NetTCPConnection -State SynReceived -LocalPort $Port -ErrorAction SilentlyContinue
+    if ($syn) { $new += $syn.RemoteAddress }
+
+    foreach ($ip in Get-CurrentClients) {
+        if (-not $allClients.ContainsKey($ip)) {
+            $new += $ip
+        }
+        $allClients[$ip] = $true
+    }
+    return $new | Sort-Object -Unique
+}
+
+function Update-Window {
+    param($ips)
+    $now    = Get-Date
+    $cutoff = $now.AddSeconds(-$WindowSec)
+
+    foreach ($ip in $ips) { $seen[$ip] = $now }
+    foreach ($old in $seen.Keys | Where-Object { $seen[$_] -lt $cutoff }) {
+        $seen.Remove($old) | Out-Null
+    }
+}
+
+function Enter-Lockdown {
+    Log &quot;&gt;&gt;&gt; ENTER LOCKDOWN (&gt;= $AlertThresh new sources)&quot;
+    Notify-Discord &quot;# :warning: **DDoS observeret:** LOCKDOWN enabled :lock: &quot;
+
+    $script:lockdown     = $true
+    $script:releaseStart = $null
+
+    $static | ForEach-Object {
+        Set-NetFirewallRule -Name $_.Name -Enabled False -ErrorAction SilentlyContinue
+    }
+
+    New-NetFirewallRule -Name &quot;DDoS-Lockdown-TCP&quot; `
+      -DisplayName &quot;DDoS Lockdown TCP&quot; -Direction Inbound -Action Block `
+      -Protocol TCP -LocalPort $Port -RemoteAddress Any -Profile Any `
+      -ErrorAction SilentlyContinue
+
+    New-NetFirewallRule -Name &quot;DDoS-Lockdown-UDP&quot; `
+      -DisplayName &quot;DDoS Lockdown UDP&quot; -Direction Inbound -Action Block `
+      -Protocol UDP -LocalPort $Port -RemoteAddress Any -Profile Any `
+      -ErrorAction SilentlyContinue
+
+    Get-CurrentClients | ForEach-Object {
+        $safe = $_.Replace('.', '_')
+        New-NetFirewallRule -Name &quot;AllowClient_${safe}_TCP&quot; `
+          -DisplayName &quot;Allow $_ TCP&quot; -Direction Inbound -Action Allow `
+          -Protocol TCP -LocalPort $Port -RemoteAddress $_ -Profile Any `
+          -ErrorAction SilentlyContinue
+        New-NetFirewallRule -Name &quot;AllowClient_${safe}_UDP&quot; `
+          -DisplayName &quot;Allow $_ UDP&quot; -Direction Inbound -Action Allow `
+          -Protocol UDP -LocalPort $Port -RemoteAddress $_ -Profile Any `
+          -ErrorAction SilentlyContinue
+    }
+}
+
+function Exit-Lockdown {
+    Log &quot;&lt;&lt;&lt; EXIT LOCKDOWN (&lt; $AlertThresh for $ReleaseWindow s)&quot;
+    Notify-Discord &quot;# :white_check_mark: **Anti-DDoS:** LOCKDOWN ophævet :unlock: &quot;
+
+    $script:lockdown     = $false
+    $script:releaseStart = $null
+
+    Get-NetFirewallRule |
+      Where-Object { $_.Name -like &quot;DDoS-Lockdown-*&quot; -or $_.Name -like &quot;AllowClient_*&quot; } |
+      Remove-NetFirewallRule -Confirm:$false -ErrorAction SilentlyContinue
+
+    $static | ForEach-Object {
+        Set-NetFirewallRule -Name $_.Name -Enabled True -ErrorAction SilentlyContinue
+    }
+}
+
+Log &quot;=== DDoS-Watcher started on port $Port ===&quot;
+
+while ($true) {
+    $newIPs = Get-NewSources
+    Update-Window -ips $newIPs
+    $count  = $seen.Count
+
+    $ts    = (Get-Date).ToString('HH:mm:ss')
+    $state = if ($lockdown) { 'LOCKDOWN' } else { 'NORMAL  ' }
+    Write-Progress -Id 1 `
+      -Activity &quot;[$ts] Count=$count Thresh=$AlertThresh State=$state&quot; `
+      -PercentComplete ([math]::Min(100, ($count / $AlertThresh * 100)))
+
+    if (-not $lockdown -and $count -ge $AlertThresh) {
+        Enter-Lockdown
+    }
+    elseif ($lockdown) {
+        if ($count -lt $AlertThresh) {
+            if (-not $releaseStart) {
+                $releaseStart = Get-Date
+            }
+            elseif ((Get-Date).Subtract($releaseStart).TotalSeconds -ge $ReleaseWindow) {
+                Exit-Lockdown
+            }
+        }
+        else {
+            $releaseStart = $null
+        }
+    }
+
+    Start-Sleep -Seconds $CheckInterval
+}
+
+</code></pre>
 
 
 
@@ -879,10 +1062,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
     
   </body>

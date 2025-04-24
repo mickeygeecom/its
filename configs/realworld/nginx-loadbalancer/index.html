@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../faget/">
+        <link rel="prev" href="../../../infrastructure/realworld/network_diagram/">
       
       
-        <link rel="next" href="../../infrastructure/demolab/architecture/">
+        <link rel="next" href="../nginx-reverse-proxy/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
     
     
       
-        <title>Målsætning - IT-sikkerhed - Mickey</title>
+        <title>Nginx Loadbalancer - IT-sikkerhed - Mickey</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
       
       
 
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#nginx-loadbalancer-configuration" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -73,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="IT-sikkerhed - Mickey" class="md-header__button md-logo" aria-label="IT-sikkerhed - Mickey" data-md-component="logo">
+    <a href="../../.." title="IT-sikkerhed - Mickey" class="md-header__button md-logo" aria-label="IT-sikkerhed - Mickey" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Målsætning
+              Nginx Loadbalancer
             
           </span>
         </div>
@@ -180,7 +185,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="IT-sikkerhed - Mickey" class="md-nav__button md-logo" aria-label="IT-sikkerhed - Mickey" data-md-component="logo">
+    <a href="../../.." title="IT-sikkerhed - Mickey" class="md-nav__button md-logo" aria-label="IT-sikkerhed - Mickey" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -210,7 +215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -231,7 +236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faget/" class="md-nav__link">
+      <a href="../../../l%C3%A6ringsm%C3%A5l/faget/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -249,17 +254,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../l%C3%A6ringsm%C3%A5l/m%C3%A5ls%C3%A6tning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -269,7 +267,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -317,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infrastructure/demolab/architecture/" class="md-nav__link">
+      <a href="../../../infrastructure/demolab/architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -339,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infrastructure/demolab/network_diagram/" class="md-nav__link">
+      <a href="../../../infrastructure/demolab/network_diagram/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -404,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configs/demolab/proxmox/" class="md-nav__link">
+      <a href="../../demolab/proxmox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configs/demolab/opnsense/" class="md-nav__link">
+      <a href="../../demolab/opnsense/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -491,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infrastructure/realworld/architecture/" class="md-nav__link">
+      <a href="../../../infrastructure/realworld/architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -513,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../infrastructure/realworld/network_diagram/" class="md-nav__link">
+      <a href="../../../infrastructure/realworld/network_diagram/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -539,17 +536,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -564,7 +563,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Real World - Configurations
@@ -575,10 +574,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../configs/realworld/nginx-loadbalancer/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -588,6 +596,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -600,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configs/realworld/nginx-reverse-proxy/" class="md-nav__link">
+      <a href="../nginx-reverse-proxy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -622,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configs/realworld/powershell-lockdown/" class="md-nav__link">
+      <a href="../powershell-lockdown/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -644,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../configs/realworld/iptables-rules.md" class="md-nav__link">
+      <a href="../iptables-rules.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -673,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mindmap/" class="md-nav__link">
+      <a href="../../../mindmap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -694,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sources/" class="md-nav__link">
+      <a href="../../../sources/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -751,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../log/19022025/" class="md-nav__link">
+      <a href="../../../log/19022025/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -773,7 +782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../log/15042025/" class="md-nav__link">
+      <a href="../../../log/15042025/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,6 +821,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -830,9 +841,176 @@
   
 
 
-  <h1>Målsætning</h1>
+<h1 id="nginx-loadbalancer-configuration">Nginx Loadbalancer Configuration</h1>
+<p>Dette er den komplette <code>nginx.conf</code>-fil brugt som loadbalancer foran vores reverse proxies og FiveM-serveren. Den håndterer både HTTP/S og TCP/UDP via stream-blokken.</p>
+<pre><code class="language-nginx">user www-data;
+worker_processes auto;
+worker_rlimit_nofile 200000;
+error_log /var/log/nginx/error.log;
+pid /var/run/nginx.pid;
+include /etc/nginx/modules-enabled/*.conf;
 
-<p>TBA</p>
+events {
+    worker_connections 100000;
+    multi_accept on;
+    use epoll;
+}
+
+http {
+    resolver 1.1.1.1 valid=300s;
+
+    limit_req_zone $binary_remote_addr zone=one:10m rate=5r/s;
+
+    sendfile on;
+    tcp_nopush on;
+    tcp_nodelay on;
+    keepalive_timeout 65;
+    types_hash_max_size 2048;
+
+    server_tokens off;
+
+    server_names_hash_bucket_size 64;
+
+    include /etc/nginx/mime.types;
+    default_type application/octet-stream;
+
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers on;
+
+    log_format json escape=json '{ '
+                                '&quot;time&quot;: &quot;$time_iso8601&quot;, '
+                                '&quot;addr&quot;: &quot;$remote_addr&quot;, '
+                                '&quot;forwarded_for&quot;: &quot;$http_x_forwarded_for&quot;, '
+                                '&quot;url&quot;: &quot;$scheme://$http_host$request_uri&quot;, '
+                                '&quot;method&quot;: &quot;$request_method&quot;, '
+                                '&quot;protocol&quot;: &quot;$server_protocol&quot;, '
+                                '&quot;status&quot;: $status, '
+                                '&quot;user_agent&quot;: &quot;$http_user_agent&quot;, '
+                                '&quot;referer&quot;: &quot;$http_referer&quot;, '
+                                '&quot;length&quot;: $request_length, '
+                                '&quot;request_time&quot;: $request_time, '
+                            '}';
+
+    access_log /var/log/nginx/access.log json;
+
+    gzip on;
+
+    set_real_ip_from 103.21.244.0/22;
+    set_real_ip_from 103.22.200.0/22;
+    set_real_ip_from 103.31.4.0/22;
+    set_real_ip_from 104.16.0.0/13;
+    set_real_ip_from 104.24.0.0/14;
+    set_real_ip_from 108.162.192.0/18;
+    set_real_ip_from 131.0.72.0/22;
+    set_real_ip_from 141.101.64.0/18;
+    set_real_ip_from 162.158.0.0/15;
+    set_real_ip_from 172.64.0.0/13;
+    set_real_ip_from 173.245.48.0/20;
+    set_real_ip_from 188.114.96.0/20;
+    set_real_ip_from 190.93.240.0/20;
+    set_real_ip_from 197.234.240.0/22;
+    set_real_ip_from 198.41.128.0/17;
+    set_real_ip_from 2400:cb00::/32;
+    set_real_ip_from 2606:4700::/32;
+    set_real_ip_from 2803:f800::/32;
+    set_real_ip_from 2405:b500::/32;
+    set_real_ip_from 2405:8100::/32;
+    set_real_ip_from 2a06:98c0::/29;
+    set_real_ip_from 2c0f:f248::/32;
+
+    real_ip_header CF-Connecting-IP;
+
+    proxy_cache_path /srv/cache levels=1:2 keys_zone=assets:48m max_size=20g inactive=2h;
+    log_format asset '$remote_addr - [$time_local] &quot;$http_host&quot; &quot;$request&quot; $status $body_bytes_sent $upstream_cache_status';
+
+    server {
+        listen 443 default_server;
+        listen [::]:443 default_server;
+        ssl_reject_handshake on;
+        server_name _;
+        return 444;
+    }
+
+    include /etc/nginx/backend.conf;
+
+    server {
+        listen 443 ssl;
+        listen [::]:443 ssl;
+        http2 on;
+
+        server_name fivem.socialrp.dk;
+
+        ssl_certificate /etc/nginx/ssl/certificate.pem;
+        ssl_certificate_key /etc/nginx/ssl/privkey.pem;
+
+        error_page 497 301 =444 @fallback;
+        error_page 502 301 =444 @fallback;
+        recursive_error_pages on;
+
+        if ($server_protocol != &quot;HTTP/2.0&quot;) {
+            return 444;
+        }
+
+        location / {
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-CF-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_pass_request_headers on;
+            proxy_http_version 1.1;
+            proxy_pass http://backend_fivem$request_uri;
+        }
+
+        location /client {
+            limit_req zone=one burst=10 nodelay;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-CF-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_pass_request_headers on;
+            proxy_http_version 1.1;
+            proxy_pass http://backend_fivem/client;
+            limit_except POST {
+                deny all;
+            }
+        }
+
+        location /files/ {
+            access_log /var/log/nginx/cache.access.log asset;
+            proxy_pass http://backend_fivem$request_uri;
+            add_header X-Cache-Status $upstream_cache_status;
+            proxy_cache_lock on;
+            proxy_cache assets;
+            proxy_cache_valid 1y;
+            proxy_cache_key $request_uri$is_args$args;
+            proxy_cache_revalidate on;
+            proxy_cache_min_uses 1;
+        }
+
+        location @fallback {
+            return 444;
+        }
+    }
+}
+
+stream {
+    include /etc/nginx/backend.conf;
+
+    server {
+        listen 30120;
+        proxy_pass backend_fivem;
+    }
+
+    server {
+        listen 30120 udp reuseport;
+        proxy_pass backend_fivem;
+        proxy_buffer_size 512k;
+        proxy_timeout 3s;
+    }
+}
+</code></pre>
 
 
 
@@ -879,10 +1057,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
     
   </body>
