@@ -1,10 +1,13 @@
 site_name: IT-sikkerhed - Mickey
 repo_url: https://github.com/mickeygeecom/its
 
+extra:
+  cname: its.mickeygee.com
+
 nav:
   - Start: index.md
   - Fagets læringsmål: læringsmål/faget.md
-  - Målsætning: læringsmål/målsætning.md
+  # - Målsætning: læringsmål/målsætning.md
   - Demo Lab - Infrastruktur:
     - Arkitektur Overblik: infrastructure/demolab/architecture.md
     - Network Diagram: infrastructure/demolab/network_diagram.md
