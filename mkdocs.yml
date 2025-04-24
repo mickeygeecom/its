@@ -5,15 +5,27 @@ nav:
   - Start: index.md
   - Fagets læringsmål: læringsmål/faget.md
   - Målsætning: læringsmål/målsætning.md
-  - Infrastruktur:
-    - Arkitektur Overblik: infrastruktur/architecture.md
-    - Network Diagram: infrastruktur/network_diagram.md
+  - Demo Lab - Infrastruktur:
+    - Arkitektur Overblik: infrastructure/demolab/architecture.md
+    - Network Diagram: infrastructure/demolab/network_diagram.md
+  - Demo Lab - Configurations:
+    - Proxmox: configs/demolab/proxmox.md
+    - OPNsense: configs/demolab/opnsense.md
+  - Real World - Infrastruktur:
+    - Arkitektur Overblik: infrastructure/realworld/architecture.md
+    - Network Diagram: infrastructure/realworld/network_diagram.md
+  - Real World - Configurations:
+    - Nginx Loadbalancer: configs/realworld/nginx-loadbalancer.md
+    - Nginx Reverse Proxy: configs/realworld/nginx-reverse-proxy.md
+    - PowerShell Lockdown: configs/realworld/powershell-lockdown.md
+    - IPTables Rules: configs/realworld/iptables-rules.md
+
   - Mindmap: mindmap.md
-  - Roadmap:
-    - P1 - Research: roadmap/fase1.md
-    - P2 - Detection og analyse: roadmap/fase2.md
-    - P3 - Inddæmning, eradication og recovery: roadmap/fase3.md
-    - P4 - Lessons learned og dokumentation: roadmap/fase4.md
+  # - Roadmap:
+  #   - P1 - Research: roadmap/fase1.md
+  #   - P2 - Detection og analyse: roadmap/fase2.md
+  #   - P3 - Inddæmning, eradication og recovery: roadmap/fase3.md
+  #   - P4 - Lessons learned og dokumentation: roadmap/fase4.md
   - Kilder: sources.md
   - Logbog:
     - 19 feb.: log/19022025.md

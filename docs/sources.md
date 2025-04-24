@@ -1,36 +1,73 @@
-# Primære kilder
 
-## NIST SP 800-61 Revision 2
-- **NIST Special Publication 800-61**  
-  Den officielle guide til håndtering af computer-sikkerhedshændelser.
+# Kilder og Dokumentation
 
-## SANS Institute
-- **SANS Reading Room**  
-  SANS har en række whitepapers og vejledninger omkring Incident Handling.
+Herunder er en liste over relevante værktøjer, dokumentation og guides anvendt i projektet.
 
-## ISO/IEC 27035 – “Information Security Incident Management”
-- Standard, der fokuserer på overordnet incidenhåndtering og styring af informationssikkerhedshændelser.
+## Virtualisering og Infrastruktur
+
+- **Proxmox VE**  
+  Virtualiseringsplatform brugt til laboratorieopsætning.  
+  [https://pve.proxmox.com/pve-docs/](https://pve.proxmox.com/pve-docs/)
+
+- **OPNsense Firewall**  
+  Bruges som firewall og gateway i laboratoriet.  
+  [https://docs.opnsense.org/](https://docs.opnsense.org/)
+
+- **Ubuntu Server**  
+  Operativsystem brugt til proxy og loadbalancer-maskiner.  
+  [https://ubuntu.com/server/docs](https://ubuntu.com/server/docs)
+
+- **Windows Server 2025**  
+  Host for FiveM origin server.  
+  [https://learn.microsoft.com/en-us/windows-server/](https://learn.microsoft.com/en-us/windows-server/)
+
+## Pentest og testmiljø
+
+- **Kali Linux**  
+  Bruges til simulering af angreb i lab.  
+  [https://www.kali.org/docs/](https://www.kali.org/docs/)
+
+- **FiveM**  
+  Multiplayer platform, udsat for real-world DDoS-angreb.  
+  [https://fivem.net/](https://fivem.net/)
+
+## Overvågning og incident response
+
+- **Prometheus**  
+  Metrics collection.  
+  [https://prometheus.io/docs/](https://prometheus.io/docs/)
+
+- **Grafana**  
+  Dashboard og visualisering.  
+  [https://grafana.com/docs/grafana/latest/](https://grafana.com/docs/grafana/latest/)
+
+- **Node Exporter**  
+  Metrics agent til Prometheus.  
+  [https://github.com/prometheus/node_exporter](https://github.com/prometheus/node_exporter)
+
+- **Medium Guide** – Prometheus, Grafana og Node Exporter opsætning  
+  [https://medium.com/@cryptocapchik/grafana-prometheus-node-exporter-setup-guide-5371bef49ce0](https://medium.com/@cryptocapchik/grafana-prometheus-node-exporter-setup-guide-5371bef49ce0)
+
+## Dokumentation
+
+- **MkDocs**  
+  Værktøj til dokumentation.  
+  [https://www.mkdocs.org/](https://www.mkdocs.org/)
+
+- **Material for MkDocs**  
+  Tema til flot og funktionel dokumentationsside.  
+  [https://squidfunk.github.io/mkdocs-material/](https://squidfunk.github.io/mkdocs-material/)
+
+## Scripting og sikkerhed
+
+- **PowerShell**  
+  Bruges til firewall automation og lockdown-mode på Windows-serveren.  
+  [https://learn.microsoft.com/en-us/powershell/](https://learn.microsoft.com/en-us/powershell/)
+
+- **iptables**  
+  Firewallstyring i Linux, brugt til reverse proxies.  
+  [https://linux.die.net/man/8/iptables](https://linux.die.net/man/8/iptables)
 
 ---
 
-# Supplerende ressourcer
-
-- **“Incident Handler’s Handbook” (SANS)**  
-- **Security blogs:**  
-  - [Krebs on Security](https://krebsonsecurity.com/)  
-  - [Schneier on Security](https://www.schneier.com/)  
-  - [Cisco Talos Blog](https://blog.talosintelligence.com/)  
-- **OWASP** for generel sikkerhedsfokuseret best practice, fx [OWASP Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
-
----
-
-# Værktøjer med god dokumentation
-## Splunk
-- [**Splunk Docs**](https://docs.splunk.com/Documentation/Splunk/latest)
-
-## Elastic Stack (ELK)
-- [**Elastic Documentation**](https://www.elastic.co/guide/index.html)
-
-## Snort eller Suricata
-- [**Snort.org**](https://www.snort.org/)
-- [**Suricata.io**](https://suricata.io/)
+Denne kildeoversigt refererer til både labmiljøet og det real-world incident response-setup, og bruges aktivt i både planlægning, udvikling og evaluering.
