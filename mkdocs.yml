@@ -21,8 +21,10 @@ nav:
       - Nginx Loadbalancer: configs/realworld/nginx-loadbalancer.md
       - Nginx Reverse Proxy: configs/realworld/nginx-reverse-proxy.md
       - PowerShell Lockdown: configs/realworld/powershell-lockdown.md
-      - Node FW Helper RoyaleHosting API: configs/realworld/nodejs-fw-helper1.md
-      - Node FW Helper Windows: configs/realworld/nodejs-fw-helper2.md
+      - Node ACL Windows Firewall: configs/realworld/nodejs-fw-helper2.md
+      - Node ACL RoyaleHosting API Firewall: configs/realworld/nodejs-fw-helper1.md
+  - Screenshots Diverse: screenshots.md
+
 
   - Mindmap: mindmap.md
   # - Roadmap:
@@ -35,19 +37,24 @@ nav:
       - 19 feb.: log/19022025.md
       - 14-15 apr.: log/15042025.md
 
+plugins:
+- search
+- mermaid2
+
 markdown_extensions:
   - admonition
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.highlight:
-      anchor_linenums: true     # viser ankre ved linjenumre
+      anchor_linenums: true
   - attr_list
   - codehilite
 
+
 theme:
   name: material
-  # features:
-  #   - mermaid
 
-plugins:
-  - search
-  - mermaid2
+

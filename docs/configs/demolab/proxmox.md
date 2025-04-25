@@ -33,3 +33,6 @@ iface vmbrlab inet static
 
 ## Proxmox Network Diagram
 ![Proxmox Network Diagram](../../images/proxmox-network.png)
+
+## Proxmox VMs
+![Proxmox Network Diagram](../../images/proxmox-vms.png)
