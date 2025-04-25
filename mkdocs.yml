@@ -9,19 +9,20 @@ nav:
   - Fagets læringsmål: læringsmål/faget.md
   # - Målsætning: læringsmål/målsætning.md
   - Demo Lab - Infrastruktur:
-    - Arkitektur Overblik: infrastructure/demolab/architecture.md
-    - Network Diagram: infrastructure/demolab/network_diagram.md
+      - Arkitektur Overblik: infrastructure/demolab/architecture.md
+      - Network Diagram: infrastructure/demolab/network_diagram.md
   - Demo Lab - Configurations:
-    - Proxmox: configs/demolab/proxmox.md
-    - OPNsense: configs/demolab/opnsense.md
+      - Proxmox: configs/demolab/proxmox.md
+      - OPNsense: configs/demolab/opnsense.md
   - Real World - Infrastruktur:
-    - Arkitektur Overblik: infrastructure/realworld/architecture.md
-    - Network Diagram: infrastructure/realworld/network_diagram.md
+      - Arkitektur Overblik: infrastructure/realworld/architecture.md
+      - Network Diagram: infrastructure/realworld/network_diagram.md
   - Real World - Configurations:
-    - Nginx Loadbalancer: configs/realworld/nginx-loadbalancer.md
-    - Nginx Reverse Proxy: configs/realworld/nginx-reverse-proxy.md
-    - PowerShell Lockdown: configs/realworld/powershell-lockdown.md
-    - IPTables Rules: configs/realworld/iptables-rules.md
+      - Nginx Loadbalancer: configs/realworld/nginx-loadbalancer.md
+      - Nginx Reverse Proxy: configs/realworld/nginx-reverse-proxy.md
+      - PowerShell Lockdown: configs/realworld/powershell-lockdown.md
+      - Node FW Helper RoyaleHosting API: configs/realworld/nodejs-fw-helper1.md
+      - Node FW Helper Windows: configs/realworld/nodejs-fw-helper2.md
 
   - Mindmap: mindmap.md
   # - Roadmap:
@@ -31,14 +32,22 @@ nav:
   #   - P4 - Lessons learned og dokumentation: roadmap/fase4.md
   - Kilder: sources.md
   - Logbog:
-    - 19 feb.: log/19022025.md
-    - 14-15 apr.: log/15042025.md
+      - 19 feb.: log/19022025.md
+      - 14-15 apr.: log/15042025.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true     # viser ankre ved linjenumre
+  - attr_list
+  - codehilite
 
 theme:
   name: material
-  #features:
-  #  - mermaid
+  # features:
+  #   - mermaid
 
 plugins:
-- search
-- mermaid2
+  - search
+  - mermaid2
